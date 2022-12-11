@@ -11,6 +11,8 @@ import { NavbarUserComponent } from './navbar-user/navbar-user.component';
 import { AdminNavbarComponent } from './admin-navbar/admin-navbar.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { FormsModule } from '@angular/forms';
+import{HttpClientModule} from '@angular/common/http'
 const myroute:Routes=[
   {
     path:'reg',
@@ -43,7 +45,9 @@ const myroute:Routes=[
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(myroute)
+    RouterModule.forRoot(myroute),
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

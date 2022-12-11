@@ -9,11 +9,11 @@
                 
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Name</label>
-                    <input name="name"  type="text" class="form-control">
+                    <input name="name" [(ngModel)]="name"  type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Email</label>
-                    <input name="email"  type="text" class="form-control">
+                    <input name="email" [(ngModel)]="email"  type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Address</label>
@@ -21,18 +21,18 @@
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Phone Number</label>
-                    <input name="pno"  type="text" class="form-control">
+                    <input name="pno" [(ngModel)]="pno"  type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Password</label>
-                    <input name="password"  type="password" class="form-control">
+                    <input name="password" [(ngModel)]="password"  type="password" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Confirm Password</label>
                     <input name="cnfrm"  type="password" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
-                    <button class="btn btn-success" >Register</button>
+                    <button class="btn btn-success" (click)="read()" >Register</button>
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
                     <a href="/user" >Login Here</a>
